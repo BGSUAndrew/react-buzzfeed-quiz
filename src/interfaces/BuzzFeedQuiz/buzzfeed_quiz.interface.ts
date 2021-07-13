@@ -55,6 +55,8 @@ type BuzzFeedQuizProps = BylineProps & {
    * The text that should be copied to the clipboard upon clicking the "Copy Link" button.
    */
   copyShareLink?: string;
+  findProduct: string;
+
   /**
    * Function called when the quiz is completed and a result is available.
    *

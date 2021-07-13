@@ -5,6 +5,7 @@ type ResultType = ResultImageType & {
    * 	The heading text value of the associated result. Preceded by the string "You got: ".
    */
   title: string;
+  findProduct: string;
   /**
    * The text value of the sub-heading result description.
    */

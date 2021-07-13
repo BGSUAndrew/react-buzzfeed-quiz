@@ -46,6 +46,7 @@ const BuzzFeedQuiz: FC<BuzzFeedQuizProps> = (props) => {
     copyShareButton,
     copyShareLink,
     results,
+    findProduct,
   } = props;
 
   const [selectedAnswers, changeSelectedAnswers] = useState<ISelectedAnswer[]>(
@@ -208,6 +209,7 @@ const BuzzFeedQuiz: FC<BuzzFeedQuizProps> = (props) => {
                   changeFinalResult={changeFinalResult}
                   onResult={onResult}
                   onRestart={onRestart}
+                  findProduct={findProduct}
                 />
               </>
             ) : null
@@ -243,6 +245,7 @@ BuzzFeedQuiz.defaultProps = {
   onRestart: () => {},
   questions: [],
   results: [],
+  findProduct:"",
 };
 
 export default BuzzFeedQuiz;

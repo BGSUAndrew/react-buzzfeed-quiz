@@ -15,6 +15,7 @@ interface ResultProps {
   copyShareButton: boolean;
   copyShareLink?: string;
   shareLinkClicked: boolean;
+  findProduct: string;
   changeShareLinkClicked: Dispatch<SetStateAction<boolean>>;
   shareLinkAnimatingOut: boolean;
   changeShareLinkAnimatingOut: Dispatch<SetStateAction<boolean>>;
